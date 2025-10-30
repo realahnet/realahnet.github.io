@@ -1,0 +1,40 @@
+---
+const { title = "Ahnet" } = Astro.props;
+import "../styles/BaseStyles.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_div">
+        <a href="/" class="nav_name">Ahnet</a>
+        <div class="nav_ul_div">
+          <ul class="nav_ul">
+            <li><a href="/">Home</a></li>
+            <li><a href="/posts">Posts</a></li>
+          </ul>
+          <span></span>
+          <img src="/search_icon.svg" height="20" width="20" alt="Search Icon"/>
+        </div>
+      </div>
+    </nav>
+    <main><slot /></main>
+
+    <footer class="footer">
+      <p>
+        © 2025 <a href="/">Ahnet</a> · Powered by <a
+          href="https://astro.build/"
+          target="_blank">Astro</a>
+      </p>
+    </footer>
+  </body>
+
+  <link rel="stylesheet" href="" />
+</html>
