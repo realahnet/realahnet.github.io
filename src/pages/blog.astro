@@ -2,30 +2,32 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../Components/Card.astro";
 import "../styles/BlogStyles.css";
-const postFiles = import.meta.glob("./posts/*.md", { eager: true }) as Record<string, any>;
+const postFiles = import.meta.glob("./posts/*.md", { eager: true }) as Record<
+  string,
+  any
+>;
 const allPosts = Object.values(postFiles);
 ---
 
 <BaseLayout title="Blogs | Ahnet">
+  <div class="main">
+    <div class="heading">
+      <a href="/">Home</a>
+      <h1>Posts</h1>
+    </div>
 
-    <div class="main">
-  <div class="heading">
-    <a href="/">Home</a>
-    <h1>Posts</h1>
-  </div>
-
-  {
-    allPosts.map((post) => {
-      return (
-        <Card
-          name={post.frontmatter.name}
-          link={post.url}
-          desc={post.frontmatter.desc}
-          date={post.frontmatter.date}
-          time={post.frontmatter.time}
-        />
-      );
-    })
-  }
+    {
+      allPosts.map((post) => {
+        return (
+          <Card
+            name={post.frontmatter.name}
+            link={post.url}
+            desc={post.frontmatter.desc}
+            date={post.frontmatter.date}
+            time={post.frontmatter.time}
+          />
+        );
+      })
+    }
   </div>
 </BaseLayout>

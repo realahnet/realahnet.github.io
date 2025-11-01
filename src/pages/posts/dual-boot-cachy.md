@@ -112,21 +112,26 @@ CachyOS needs 2 partitions to install: bootloader/EFI and Root
 </ol>
 
 ### **Step 5: Choosing a Desktop Environment**
+
 A desktop environment (DE) is basically the entire UI that you'll be using. On Windows it might be fixed, but here you have the choice to choose whatever you desire. For beginners, I recommend using KDE Plasma. It has a layout similar to Windows and is very user-friendly.
 
 Once you've chosen your desktop environment, click next.
 
 ### **Step 6: Additional Packages**
+
 In this section you'll be seeing a choice to select any additional packages. If you have no idea what the different packages are, then just click next.
 
 ### **Step 7: Creating Users**
+
 You will be asked to enter user details, etc. After you are done, click next.
 
 ### **Step 8: Summary**
+
 Verify all the changes on the summary page before clicking Install.
 
 ### **Step 9: Booting into CachyOS**
-After the installation is done, reboot. 
+
+After the installation is done, reboot.
 
 Following step 2 boot back into BIOS and select CachyOS or Grub at the top of the boot priority, then save changes and exit.
 
@@ -135,6 +140,7 @@ After rebooting, you will see a new menu appearing. Choose CachyOS from that men
 ---
 
 # Summary
+
 Congratulations! 🎉 You have successfully installed CachyOS alongside Windows! Now you can use CachyOS alongside Windows whenever you want by selecting the respective OS in the menu.
 
 ---

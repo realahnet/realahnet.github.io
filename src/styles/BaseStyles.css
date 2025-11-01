@@ -55,7 +55,6 @@ nav {
   transform: scale(1.05);
 }
 
-
 .nav_ul {
   display: flex;
   justify-content: center;
@@ -128,4 +127,3 @@ footer a {
 footer a:hover {
   color: rgb(172, 171, 171);
 }
-
