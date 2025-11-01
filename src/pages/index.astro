@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/IndexStyles.css";
+import linkedin_icon from "../assets/icons/connect_icons/linkedin_icon_minimal.svg";
+import github_icon from "../assets/icons/connect_icons/github_icon.svg";
 ---
 
 <BaseLayout>
@@ -19,7 +21,7 @@ import "../styles/IndexStyles.css";
     <div class="profiles_imgs">
       <a href="https://www.linkedin.com/in/kumail-hanafi/" target="_blank">
         <img
-          src="/src/assets/icons/connect_icons/linkedin_icon_minimal.svg"
+          src={linkedin_icon.src}
           class="linkedin_img"
           height="30"
           width="30"
@@ -29,7 +31,7 @@ import "../styles/IndexStyles.css";
       <span></span>
       <a href="https://github.com/realahnet" target="_blank">
         <img
-          src="/src/assets/icons/connect_icons/github_icon.svg"
+          src={github_icon.src}
           class="git_img"
           height="40"
           width="40"

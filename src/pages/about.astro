@@ -1,6 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/AboutStyles.css";
+
+// Languages Icons
+import c_lang_icon from "../assets/icons/languages/c_lang.svg";
+import javascript_icon from "../assets/icons/languages/javascript_icon.svg";
+import kotlin_icon from "../assets/icons/languages/kotlin.svg";
+
+// Connect Icons
+import discord_icon from "../assets/icons/connect_icons/discord.svg";
+import email_icon from "../assets/icons/connect_icons/email.svg";
+import github_icon from "../assets/icons/connect_icons/github_icon.svg";
+import linkedin_icon from "../assets/icons/connect_icons/linkedin_icon.svg";
+import telegram_icon from "../assets/icons/connect_icons/telegram.svg";
 ---
 
 <BaseLayout title="Profile | Ahnet">
@@ -37,16 +49,13 @@ import "../styles/AboutStyles.css";
 
         <ul class="lang_list">
           <li>
-            <img src="/src/assets/icons/languages/c_lang.svg" />Currently
-            learning C
+            <img src={c_lang_icon.src} />Currently learning C
           </li>
           <li>
-            <img src="/src/assets/icons/languages/javascript_icon.svg" />Basic
-            JavaScript
+            <img src={javascript_icon.src} />Basic JavaScript
           </li>
           <li>
-            <img src="/src/assets/icons/languages/kotlin.svg" />Basic
-            understanding of Kotlin/Java
+            <img src={kotlin_icon.src} />Basic understanding of Kotlin/Java
           </li>
         </ul>
 
@@ -68,31 +77,31 @@ import "../styles/AboutStyles.css";
         <h2>🌐 Contact me at</h2>
         <ul class="connect_ul">
           <li>
-            <img src="/src/assets/icons/connect_icons/discord.svg" /><a
+            <img src={discord_icon.src} /><a
               href="https://discord.com/users/635483684719558666"
               target="_blank">Discord</a
             >
           </li>
           <li>
-            <img src="/src/assets/icons/connect_icons/email.svg" /><a
+            <img src={email_icon.src} /><a
               href="mailto:kumailhanafi72@gmail.com"
               target="_blank">Email</a
             >
           </li>
           <li>
-            <img src="/src/assets/icons/connect_icons/github_icon.svg" /><a
+            <img src={github_icon.src} /><a
               href="https://github.com/realahnet"
               target="_blank">GitHub</a
             >
           </li>
           <li>
-            <img src="/src/assets/icons/connect_icons/linkedin_icon.svg" /><a
+            <img src={linkedin_icon.src} /><a
               href="https://www.linkedin.com/in/kumail-hanafi/"
               target="_blank">LinkedIn</a
             >
           </li>
           <li>
-            <img src="/src/assets/icons/connect_icons/telegram.svg" /><a
+            <img src={telegram_icon.src} /><a
               href="https://t.me/ahnet_h"
               target="_blank">Telegram</a
             >
