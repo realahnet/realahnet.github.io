@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../Components/Card.astro";
-import "../styles/BlogStyles.css";
 const postFiles = import.meta.glob("./posts/*.md", { eager: true }) as Record<
   string,
   any
@@ -14,10 +13,10 @@ const allPosts = Object.values(postFiles).sort((a, b) => {
 ---
 
 <BaseLayout title="Blogs | Ahnet">
-  <div class="main">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-15 lg:mt-20 mb-15">
     <div class="heading">
-      <a href="/">Home</a>
-      <h1>Posts</h1>
+      <a class="text-[#cccccc] transition-colors duration-300 hover:text-[#acacab]" href="/">Home</a>
+      <h1 class="mt-2 text-4xl font-extrabold">Posts</h1>
     </div>
 
     {

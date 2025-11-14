@@ -3,8 +3,8 @@ const { name, desc, date, time, link } = Astro.props;
 import "../styles/CardStyles.css";
 ---
 
-<a href={link} class="card">
-  <h3 class="card_heading">{name}</h3>
-  <p class="card_desc">{desc}</p>
-  <p class="card_date">{date} · {time}</p>
+<a href={link} class="block bg-white/5 border border-white/10 rounded-xl p-6 sm:p-7 md:p-[30px] no-underline text-white transition-shadow duration-300 hover:shadow-[0_6px_20px_rgba(0,0,0,0.4)] max-w-full mx-auto my-6 sm:my-7 md:my-[30px]">
+  <h3 class="text-lg sm:text-xl md:text-2xl font-extrabold">{name}</h3>
+  <p class="pt-0 sm:pt-2.5 text-sm sm:text-[15px] text-[#aaaaaa]">{desc}</p>
+  <p class="pt-2 sm:pt-2.5 text-xs sm:text-[12px] text-[#aaaaaa]">{date} · {time}</p>
 </a>

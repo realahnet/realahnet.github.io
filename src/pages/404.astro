@@ -10,45 +10,53 @@ import qrcode from "../assets/icons/qr-code.svg";
     <meta name="generator" content={Astro.generator} />
     <title>Error 404 | Ahnet</title>
   </head>
-  <body>
-    <div class="main_div">
-      <h1 class="smiley">:(</h1>
-
-      <p>This website ran into a problem and needs fixing.</p>
-      <p>We are just collecting some data, and then you can continue!</p>
-
-      <p id="progress" class="percent_p">0% complete</p>
-
-      <div class="qr_div">
-        <img class="qr_code" src={qrcode.src} height="200px" width="200px" />
-
-        <div class="qr_text">
+  <body class="bg-black text-white">
+    <div class="px-4 sm:px-8 md:px-15 py-20 sm:py-16 md:py-25">
+      <h1 class="text-[clamp(3rem,20vw,8rem)] font-bold leading-none">:(</h1>
+      <div
+        class="text-[clamp(0.9rem,4vw,1.5rem)] mt-13 sm:mt-8 md:mt-10 pr-4 sm:pr-8 md:pr-10"
+      >
+        <p>This website ran into a problem and needs fixing.</p>
+        <p>We are just collecting some data, and then you can continue!</p>
+        <p id="progress" class="mt-8 sm:mt-7">0% complete</p>
+      </div>
+      <div
+        class="mt-12 sm:mt-16 md:mt-20 flex items-start sm:items-center gap-6 sm:gap-8"
+      >
+        <img
+          class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-[200px] lg:h-auto flex-shrink-0"
+          src={qrcode.src}
+          alt="QR Code"
+        />
+        <div class="text-sm sm:text-base md:text-lg lg:text-xl">
           <p>
-            To learn about my experiences, check out <a href="/blog"
+            To learn about my experiences, check out <a
+              href="/blog"
+              class="underline text-gray-300 hover:text-gray-400 transition-colors duration-300"
               >my blogs!</a
             >
           </p>
-
-          <div class="p_support">
+          <br />
+          <div class="space-y-1">
             <p>If you call a support person, give them this info:</p>
-            <p>Stop Code: <code>Error 404</code></p>
+            <p>
+              Stop Code: <code
+                class="bg-gray-800 px-2 py-1 rounded text-xs sm:text-sm"
+                >Error 404</code
+              >
+            </p>
           </div>
         </div>
       </div>
     </div>
-
     <script>
       let progress = 0;
       const progressElement = document.getElementById("progress");
-
       function updateProgress() {
-        if (!progressElement) return; // null check to avoid errors
+        if (!progressElement) return;
         progress += Math.floor(Math.random() * 2) + 1;
-
         if (progress > 100) progress = 100;
-
         progressElement.textContent = `${progress}% complete`;
-
         if (progress < 100) {
           setTimeout(updateProgress, Math.random() * 800 + 200);
         } else {
@@ -57,7 +65,6 @@ import qrcode from "../assets/icons/qr-code.svg";
           }, 2500);
         }
       }
-
       window.addEventListener("DOMContentLoaded", () => {
         setTimeout(updateProgress, 1500);
       });

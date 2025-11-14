@@ -1,47 +1,49 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/IndexStyles.css";
 import linkedin_icon from "../assets/icons/connect_icons/linkedin_icon_minimal.svg";
 import github_icon from "../assets/icons/connect_icons/github_icon.svg";
+import "../styles/FadeIn.css";
 ---
 
 <BaseLayout>
-  <img
-    class="main_img"
-    src="https://avatars.githubusercontent.com/u/57623523"
-    height="300"
-    width="300"
-    alt="Profile Picture"
-  />
+  <div style="font-family: Poppins Regular;" class="animate-[FadeIn_0.5s_ease-in] flex flex-col justify-center items-center text-center min-h-[calc(100dvh-60px-80px)] px-4">
+    <img
+      class="block mx-auto rounded-full w-50 h-50 sm:w-42 sm:h-42 md:w-64 md:h-64 lg:w-[300px] lg:h-[300px]"
+      src="https://avatars.githubusercontent.com/u/57623523"
+      height="300"
+      width="300"
+      alt="Profile Picture"
+    />
 
-  <div class="main_div">
-    <h1>Kumail Hanafi</h1>
-    <p>I exist 🥲</p>
+    <div class="pt-4 sm:pt-5 md:pt-6 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold">Kumail Hanafi</h1>
+      <p class="text-base sm:text-lg md:text-xl lg:text-[20px] pt-1 sm:pt-1.5 text-[#c2c2c2]">I exist 🥲</p>
 
-    <div class="profiles_imgs">
-      <a href="https://www.linkedin.com/in/kumail-hanafi/" target="_blank">
-        <img
-          src={linkedin_icon.src}
-          class="linkedin_img"
-          height="30"
-          width="30"
-          alt="LinkedIn Icon"
-        />
-      </a>
-      <span></span>
-      <a href="https://github.com/realahnet" target="_blank">
-        <img
-          src={github_icon.src}
-          class="git_img"
-          height="40"
-          width="40"
-          alt="GitHub Icon"
-        />
+      <div class="pt-6 sm:pt-7 md:pt-[30px] flex justify-center items-center gap-4 sm:gap-6">
+        <a href="https://www.linkedin.com/in/kumail-hanafi/" target="_blank">
+          <img
+            src={linkedin_icon.src}
+            class="linkedin_img"
+            height="30"
+            width="30"
+            alt="LinkedIn Icon"
+          />
+        </a>
+        <span class="w-[2px] h-8 sm:h-9 md:h-10 bg-white/30"></span>
+        <a href="https://github.com/realahnet" target="_blank">
+          <img
+            src={github_icon.src}
+            class="git_img"
+            height="40"
+            width="40"
+            alt="GitHub Icon"
+          />
+        </a>
+      </div>
+
+      <a href="/about">
+        <button class="bg-[#5c5c5c] rounded-lg mt-5 sm:mt-6 md:mt-[25px] px-6 py-2 sm:py-2.5 md:py-3 border-none cursor-pointer text-base sm:text-lg md:text-xl lg:text-[20px] transition-colors duration-200 hover:bg-[#464646]">My Profile</button>
       </a>
     </div>
-
-    <a href="/about">
-      <button class="about_button">My Profile</button>
-    </a>
   </div>
 </BaseLayout>

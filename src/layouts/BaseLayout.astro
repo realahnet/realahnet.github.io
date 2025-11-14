@@ -11,15 +11,38 @@ import "../styles/BaseStyles.css";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <nav>
-      <div class="nav_div">
-        <a href="/" class="nav_name">Ahnet</a>
-        <div class="nav_ul_div">
-          <ul class="nav_ul">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blogs</a></li>
+
+  <body
+    style="font-family: Poppins Regular;"
+    class="min-h-[100dvh] flex flex-col bg-[#23272e] text-white"
+  >
+    <nav class="flex items-center shadow-md w-full h-[60px] bg-black/30">
+      <div
+        class="flex items-center justify-between px-4 sm:px-6 md:px-[30px] w-full"
+      >
+        <a
+          href="/"
+          style="font-family: Poppins ExtraBold"
+          class="text-white no-underline text-xl sm:text-2xl md:text-[25px] font-extrabold transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] hover:text-[#a3a3a3] hover:scale-105"
+          >Ahnet</a
+        >
+
+        <div class="flex items-center gap-3 sm:gap-4 md:gap-[5mm]">
+          <ul
+            class="flex justify-center gap-3 sm:gap-4 md:gap-[5mm] list-none m-0 p-0"
+          >
+            <li
+              class="text-white no-underline text-sm sm:text-base md:text-[17px] transition-colors duration-300 hover:text-[#acacab]"
+            >
+              <a href="/">Home</a>
+            </li>
+            <li
+              class="text-white no-underline text-sm sm:text-base md:text-[17px] transition-colors duration-300 hover:text-[#acacab]"
+            >
+              <a href="/blog">Blogs</a>
+            </li>
           </ul>
+
           <!-- Use in future when search functionality is added -->
           <!--
           <span></span>
@@ -33,16 +56,26 @@ import "../styles/BaseStyles.css";
         </div>
       </div>
     </nav>
-    <main><slot /></main>
+    <main class="flex-1"><slot /></main>
 
-    <footer class="footer">
+    <footer
+      class="text-center py-4 bg-black/30 text-[#cccccc] text-xs space-y-2"
+    >
       <p>
-        © 2025 <a href="/">Ahnet</a> · Powered by <a
+        © 2025 <a
+          href="/"
+          class="text-white transition-colors duration-300 hover:text-[#acacab]"
+          >Ahnet</a
+        > · Powered by <a
           href="https://astro.build/"
-          target="_blank">Astro</a
-        >
+          target="_blank"
+          class="text-white transition-colors duration-300 hover:text-[#acacab]"
+          >Astro</a> & <a href="https://tailwindcss.com/" target="_blank" class="text-white transition-colors duration-300 hover:text-[#acacab]">TailWind</a>
       </p>
-      <a href="https://github.com/realahnet/Portfolio">Site Source</a>
+      <a
+        class="underline text-white transition-colors duration-300 hover:text-[#acacab]"
+        href="https://github.com/realahnet/Portfolio">Site Source</a
+      >
     </footer>
   </body>
 </html>

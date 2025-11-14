@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/AboutStyles.css";
 
 // Languages Icons
 import c_lang_icon from "../assets/icons/languages/c_lang.svg";
@@ -16,98 +15,133 @@ import telegram_icon from "../assets/icons/connect_icons/telegram.svg";
 ---
 
 <BaseLayout title="Profile | Ahnet">
-  <div class="main">
-    <div class="heading">
-      <a href="/">Home</a>
-      <h1>About Me</h1>
-      <p>1 min</p>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-15 lg:mt-20 mb-15">
+    <a
+      href="/"
+      class="text-[#cccccc] transition-colors duration-300 hover:text-[#acacab]"
+      >Home</a
+    >
+    <h1 class="mt-2 text-4xl font-extrabold">About Me</h1>
+    <p class="text-base text-[#acacab]">1 min</p>
 
-      <div class="content">
-        <h2>👋 Hello there! I am Kumail Hanafi (Ahnet)</h2>
-        <p>
-          I am a student at FAST NUCES, pursuing a BS in Artificial
-          Intelligence. I'm deeply passionate about technology: whether it's
-          hardware or software. I'm always curious to learn beyond what is
-          possible!
-        </p>
-        <hr class="divider" />
-        <h2>⚡ Projects</h2>
+    <div class="mt-7">
+      <h2 class="text-3xl mb-2">👋 Hello there! I am Kumail Hanafi (Ahnet)</h2>
+      <p class="text-lg text-[#aaaaaa] italic mb-5">
+        I am a student at FAST NUCES, pursuing a BS in Artificial Intelligence.
+        I'm deeply passionate about technology: whether it's hardware or
+        software. I'm always curious to learn beyond what is possible!
+      </p>
+      <hr class="border-t border-gray-400" />
+      <h2 class="mt-5 text-2xl mb-3 font-extrabold">⚡ Projects</h2>
 
-        <ul class="projects_list">
-          <li>
-            Maintaining <a href="https://yaaprom.org/">YAAP</a> for Xperia 1 II,
-            Xperia 5 II
-          </li>
-          <li style="font-style: italic; color: rgb(182, 182, 182);">
-            More Upcoming...
-          </li>
-        </ul>
+      <ul class="mb-5 text-lg space-y-3 ml-6 list-disc sm:ml-10">
+        <li>
+          Maintaining <a
+            class="underline transition-colors duration-300 hover:text-[#acacab]"
+            href="https://yaaprom.org/">YAAP</a
+          > for Xperia 1 II, Xperia 5 II
+        </li>
+        <li style="font-style: italic; color: rgb(182, 182, 182);">
+          More Upcoming...
+        </li>
+      </ul>
 
-        <hr class="divider" />
+      <hr class="border-t border-gray-400" />
 
-        <h2>🤝🏻 Skills</h2>
+      <h2 class="mt-5 text-2xl mb-3 font-extrabold">🤝🏻 Skills</h2>
 
-        <ul class="lang_list">
-          <li>
-            <img src={c_lang_icon.src} />Currently learning C
-          </li>
-          <li>
-            <img src={javascript_icon.src} />Basic JavaScript
-          </li>
-          <li>
-            <img src={kotlin_icon.src} />Basic understanding of Kotlin/Java
-          </li>
-        </ul>
-
-        <hr class="divider" />
-        <h2>📊 GitHub Statistics</h2>
-        <div class="github_stats">
+      <ul class="text-lg space-y-3 ml-6 list-disc sm:ml-10">
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
           <img
-            src="https://github-readme-stats.vercel.app/api?username=realahnet&show_icons=true&theme=dark&count_private=true"
-            alt="GitHub Statistics"
+            src={c_lang_icon.src}
+            class="w-6 h-6 sm:w-7 sm:h-7 mr-2"
+            alt="C Language"
           />
+          <span>Currently learning C</span>
+        </li>
+
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
           <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=realahnet&theme=dark"
-            alt="GitHub Statistics"
+            src={javascript_icon.src}
+            class="w-6 h-6 sm:w-7 sm:h-7 mr-2"
+            alt="JavaScript"
           />
-        </div>
+          <span>Basic JavaScript</span>
+        </li>
 
-        <hr class="divider" />
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img
+            src={kotlin_icon.src}
+            class="w-6 h-6 sm:w-7 sm:h-7 mr-2"
+            alt="Kotlin"
+          />
+          <span>Basic understanding of Kotlin/Java</span>
+        </li>
+      </ul>
 
-        <h2>🌐 Contact me at</h2>
-        <ul class="connect_ul">
-          <li>
-            <img src={discord_icon.src} /><a
-              href="https://discord.com/users/635483684719558666"
-              target="_blank">Discord</a
-            >
-          </li>
-          <li>
-            <img src={email_icon.src} /><a
-              href="mailto:kumailhanafi72@gmail.com"
-              target="_blank">Email</a
-            >
-          </li>
-          <li>
-            <img src={github_icon.src} /><a
-              href="https://github.com/realahnet"
-              target="_blank">GitHub</a
-            >
-          </li>
-          <li>
-            <img src={linkedin_icon.src} /><a
-              href="https://www.linkedin.com/in/kumail-hanafi/"
-              target="_blank">LinkedIn</a
-            >
-          </li>
-          <li>
-            <img src={telegram_icon.src} /><a
-              href="https://t.me/ahnet_h"
-              target="_blank">Telegram</a
-            >
-          </li>
-        </ul>
+      <hr class="mt-5 border-t border-gray-400" />
+      <h2 class="mt-5 text-2xl mb-3 font-extrabold">📊 GitHub Statistics</h2>
+      <div class="flex flex-col items-center gap-5 my-6">
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=realahnet&show_icons=true&theme=dark&count_private=true"
+          class="w-full max-w-[480px] rounded-lg"
+          alt="GitHub Statistics"
+        />
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=realahnet&theme=dark"
+          class="w-full max-w-[480px] rounded-lg"
+          alt="GitHub Statistics"
+        />
       </div>
+
+      <hr class="border-t border-gray-400" />
+
+      <h2 class="mt-5 text-2xl mb-3 font-extrabold">🌐 Contact me at</h2>
+      <ul class="text-lg space-y-3 ml-6 list-disc sm:ml-10">
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img class="w-6 h-6 sm:w-7 sm:h-7 mr-2" src={discord_icon.src} /><a
+            href="https://discord.com/users/635483684719558666"
+            class="transition-colors duration-300 hover:text-[#acacab]"
+            target="_blank">Discord</a
+          >
+        </li>
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img class="w-6 h-6 sm:w-7 sm:h-7 mr-2" src={email_icon.src} /><a
+            href="mailto:kumailhanafi72@gmail.com"
+            class="transition-colors duration-300 hover:text-[#acacab]"
+            target="_blank">Email</a
+          >
+        </li>
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img class="w-6 h-6 sm:w-7 sm:h-7 mr-2" src={github_icon.src} /><a
+            href="https://github.com/realahnet"
+            class="transition-colors duration-300 hover:text-[#acacab]"
+            target="_blank">GitHub</a
+          >
+        </li>
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img class="w-6 h-6 sm:w-7 sm:h-7 mr-2" src={linkedin_icon.src} /><a
+            href="https://www.linkedin.com/in/kumail-hanafi/"
+            class="transition-colors duration-300 hover:text-[#acacab]"
+            target="_blank">LinkedIn</a
+          >
+        </li>
+        <li class="flex items-center text-base sm:text-lg">
+          <span class="mr-2 sm:mr-3 text-white">•</span>
+          <img class="w-6 h-6 sm:w-7 sm:h-7 mr-2" src={telegram_icon.src} /><a
+            href="https://t.me/ahnet_h"
+            class="transition-colors duration-300 hover:text-[#acacab]"
+            target="_blank">Telegram</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </BaseLayout>

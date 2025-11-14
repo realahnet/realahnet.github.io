@@ -1,31 +1,17 @@
-.card {
-  display: block;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 30px;
-  text-decoration: none;
-  color: white;
-  transition: box-shadow 0.3s ease;
-  max-width: 100%;
-  margin: 30px auto;
+@import "tailwindcss";
+
+@font-face {
+  font-family: Poppins ExtraBold;
+  src: url(../assets/fonts/Poppins-ExtraBold.ttf);
 }
 
-.card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
-
-.card_heading {
+@font-face {
   font-family: Poppins Regular;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
 }
 
-.card_desc,
-.card_date {
-  padding-top: 10px;
-  font-size: 15px;
-  color: rgb(170, 170, 170);
-}
-
-.card_date {
-  font-size: 12px;
+@layer {
+  * {
+    font-family: Poppins Regular;
+  }
 }
