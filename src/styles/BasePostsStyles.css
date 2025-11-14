@@ -6,11 +6,6 @@
   font-family: Poppins Regular;
 }
 
-.heading_markdown a {
-  color: white;
-  text-decoration: none;
-}
-
 .heading_markdown p {
   font-size: 15px;
   color: rgb(170, 170, 170);
@@ -19,6 +14,15 @@
 .markdown_body {
   margin-top: 50px;
   color: rgb(204, 204, 204);
+}
+
+.markdown_body a {
+  text-decoration: underline;
+}
+
+.heading_markdown a {
+  color: white;
+  text-decoration: none;
 }
 
 .markdown_body h1,
