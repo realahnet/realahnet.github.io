@@ -7,9 +7,9 @@ date: "1 November 2025"
 time: "7 min"
 ---
 
-# Dual-booting CachyOS and Windows
+# Dual booting CachyOS and Windows
 
-<img src="/posts/dual-boot-cachy/cachy-home-screen.png">
+<img src="/posts/dual-boot-cachy/cachy-home-screen.png" alt="Cachy Screenshot">
 
 ## Introduction
 
