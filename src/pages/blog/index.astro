@@ -1,7 +1,7 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../Components/Card.astro";
-const postFiles = import.meta.glob("./posts/*.md", { eager: true }) as Record<
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../Components/Card.astro";
+const postFiles = import.meta.glob("./*.md", { eager: true }) as Record<
   string,
   any
 >;
@@ -16,7 +16,7 @@ const allPosts = Object.values(postFiles).sort((a, b) => {
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-15 lg:mt-20 mb-15">
     <div class="heading">
       <a class="text-[#cccccc] transition-colors duration-300 hover:text-[#acacab]" href="/">Home</a>
-      <h1 style="font-family: Outfit Bold;" class="mt-2 text-4xl">Posts</h1>
+      <h1 style="font-family: Outfit Bold;" class="mt-2 text-4xl">Blogs</h1>
     </div>
 
     {
