@@ -43,3 +43,7 @@ url = "https://linkedin.com/in/kumail-hanafi"
     identifier = "tags"
     name       = "Tags"
     url        = "/tags"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
