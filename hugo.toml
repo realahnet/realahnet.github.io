@@ -20,6 +20,12 @@ imageHeight = 300
   name = "My Blogs"
   url = "/posts"
 
+[params]
+    ShowReadingTime = true
+    taglist = true
+    ShowCodeCopyButtons = true
+    ShowBreadCrumbs = true
+
 [[params.socialIcons]]
 name = "GitHub"
 url = "https://github.com/realahnet"
