@@ -20,7 +20,7 @@ draft: false
 
 ## 🚀 Projects
 
-- Maintaining [YAAP](https://yaaprom.org/) for Xperia 1 II, Xperia 5 II
+- Maintaining [YAAP](https://yaaprom.org/) for Xperia 1 II, Xperia 5 II, Oneplus Ace 5, OnePlus 13R
 - *More Upcoming...*
 
 ---
@@ -28,7 +28,8 @@ draft: false
 ## 🤝🏻 Skills
 
 - 💻 **JavaScript** – Comfortable with the basics and building small projects  
-- 🅲 **C** – Familiar with fundamentals and problem-solving  
+- 🅲 **C** – Familiar with fundamentals and problem-solving
+- 🅲 **C++** - Understanding of inheritance and Object-Oriented Programming
 - ☕ **Java** & 🤖 **Kotlin** – Basic understanding, exploring mobile development
 
 
