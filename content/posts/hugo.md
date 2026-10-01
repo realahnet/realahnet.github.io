@@ -7,7 +7,7 @@ showToc: true
 tags: ["git", "github", "workflows", "hugo"]
 ---
 
-![Hugo](https://usersnap.com/blog/wp-content/uploads/2015/10/static-site-generator-hugo-lessons-learned-1280x720.webp)
+![Hugo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoW_u5mY3qMdAEXHt45FpHmlNEGDwJTTXmLcqb8shVP_NcHWTmMCrVhKo&s=10)
 
 ## Introduction
 Hugo is a fast and reliable static site generator written in Go. Designed for performance and stability, it can generate even the largest websites in seconds. Furthermore, Hugo is highly customizable, allowing you to tweak configurations and apply themes easily via the `hugo.toml` file. This makes it popular for sites such as blogs, documentation, etc.
