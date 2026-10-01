@@ -7,7 +7,7 @@ showToc: true
 tags: ["automation", "ssh", "linux", "remote-access"]
 ---
 
-![SSH Screenshot](/intro-to-ssh/ssh-cover.png)
+![SSH Screenshot](/intro-to-ssh/ssh-cover.webp)
 
 ## Introduction
 SSH stands for **S**ecure **Sh**ell protocol. It is a method for securely sending instructions to another computer over an unsecured network. By ensuring the use of cryptography, it encrypts and secures the connection between devices. In this blog I will be showing you a practical example of how to set up SSH as a server and connect to it using another machine.
@@ -74,7 +74,7 @@ sudo systemctl status sshd
 
 It should show that the SSH daemon is running as follows:
 
-![SSH Daemon Verification](/intro-to-ssh/sshd-verification.png)
+![SSH Daemon Verification](/intro-to-ssh/sshd-verification.webp)
 
 You can see that `sshd` is running, and it is listening for connections on port `22`.
 
@@ -87,7 +87,7 @@ sudo ufw status
 ```
 
 The output would be as follows:
-![Firewall Status](/intro-to-ssh/firewall-check.png)
+![Firewall Status](/intro-to-ssh/firewall-check.webp)
 
 We can see that it shows that the status is `Active` and that it is allowing a few specific ports via TCP or UDP.
 
@@ -109,7 +109,7 @@ sudo ufw reload
 
 The output should be something as follows:
 
-![SSH Firewall Allow](/intro-to-ssh/firewall-ssh-allow.png)
+![SSH Firewall Allow](/intro-to-ssh/firewall-ssh-allow.webp)
 
 You can now see that port `22` is now allowed for SSH.
 
@@ -149,7 +149,7 @@ After entering the command, it will ask you for the user's password.
 
 The connection process will look something like this:
 
-![Connecting to Server](/intro-to-ssh/connecting-ssh.png)
+![Connecting to Server](/intro-to-ssh/connecting-ssh.webp)
 
 > 🤔 Notice how it warns you that the server's authenticity can't be verified ?
 
@@ -179,7 +179,7 @@ sudo nano /etc/ssh/sshd_config
 
 3. Find the following line: ` #Port 22`
 
-![Finding Port](/intro-to-ssh/finding-port-sshd.png)
+![Finding Port](/intro-to-ssh/finding-port-sshd.webp)
 
 > On `nano` the find function is achieved by the key combination: `Ctrl` + `W`.
 
@@ -187,7 +187,7 @@ You can see that the default port is set to `22` and that it is commented.
 
 4. Uncomment that line by removing the `#` and changing the port to your chosen port. For example, in this case, ` 4235`
 
-![Changing Port](/intro-to-ssh/changing-port-sshd.png)
+![Changing Port](/intro-to-ssh/changing-port-sshd.webp)
 
 Save your changes and exit.
 
@@ -221,7 +221,7 @@ Check if the newly assigned port has been allowed:
 sudo ufw status
 ```
 
-![Firewall Check](/intro-to-ssh/firewall-check-port.png)
+![Firewall Check](/intro-to-ssh/firewall-check-port.webp)
 
 ### Step 5: Connecting to Server with New Port
 Now the clients must specify the port when connecting to the server. As follows:
@@ -257,7 +257,7 @@ It is generally recommended to keep a password for the key.
 
 The output will be as follows:
 
-![Generating Keys](/intro-to-ssh/ssh-keygen.png)
+![Generating Keys](/intro-to-ssh/ssh-keygen.webp)
 
 This creates two files. One of them is our public key, while the other is our private key.
 ```

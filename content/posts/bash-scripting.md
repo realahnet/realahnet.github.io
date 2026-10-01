@@ -7,7 +7,7 @@ showToc: true
 tags: ["automation", "bash", "linux", "scripting"]
 ---
 
-![Shell Screenshot](/bash-scripting/bash-cover.png)
+![Shell Screenshot](/bash-scripting/bash-cover.webp)
 
 ## Introduction
 
@@ -84,7 +84,7 @@ touch creates an empty file in the current directory with the name specified.
 
 Verify that the file is created in the current directory by using the `ls` command:
 
-![Shell Screenshot](/bash-scripting/bash-script-create.png)
+![Shell Screenshot](/bash-scripting/bash-script-create.webp)
 
 Let's now edit the file using `nano`.
 
@@ -129,7 +129,7 @@ cat hello.txt
 
 Let's save our file using nano:
 
-![Shell Screenshot](/bash-scripting/bash-nano-save.png)
+![Shell Screenshot](/bash-scripting/bash-nano-save.webp)
 
 Press `Ctrl + X` (or `Command + X` on macOS) to save your changes and then press y and enter.
 
@@ -153,7 +153,7 @@ Execute your script by running it as follows:
 
 You should see an output like:
 
-![Shell Screenshot](/bash-scripting/bash-run-script.png)
+![Shell Screenshot](/bash-scripting/bash-run-script.webp)
 
 ---
 

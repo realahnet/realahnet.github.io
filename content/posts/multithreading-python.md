@@ -7,7 +7,7 @@ showToc: true
 tags: ["python", "multithreading"]
 ---
 
-![SSH Screenshot](https://miro.medium.com/1*ckEihMg7ZxrzQsL89JGGLA.jpeg)
+![SSH Screenshot](https://miro.medium.com/1*ckEihMg7ZxrzQsL89JGGLA.webp)
 
 ## Introduction
 Multithreading refers to a concept that allows many instructions in our code to be executed concurrently, meaning they execute in the same period of time. These codes run inside a smaller execution unit called threads. While in normal procedural programming, the code ran line by line, with multithreading, you can allow various snippets to run side-by-side, thus achieving efficiency.

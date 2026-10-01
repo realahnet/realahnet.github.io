@@ -7,7 +7,7 @@ showToc: true
 tags: ["cuda", "programming", "scripting", "gpu", "AI"]
 ---
 
-![Nvidia CUDA](/cuda-programming/cuda-banner.jpeg)
+![Nvidia CUDA](/cuda-programming/cuda-banner.webp)
 
 ## Introduction
 
@@ -48,7 +48,7 @@ The main advantage of this was that large tasks such as matrix multiplication wo
 
 Unlike CPUs, GPUs are very different. Most CPUs consist of cores and threads. For example, an Intel CPU might have 4 cores but 8 threads. (These threads are achieved by Intel's hyper-threading technology or simultaneous multi-threading in AMD). The structure might look something like this:
 
-![Hyper Threading / SMT](/cuda-programming/logical-cores-exp.jpg)
+![Hyper Threading / SMT](/cuda-programming/logical-cores-exp.webp)
 *Source of Image: [here](https://huybien.com/tag/logical-processor/)*
 
 Each core exposes two logical processors to the operating system. Each logical core can perform a task. However, only one will execute at a time. For example, if on core 1, thread 1 is waiting for a result to be computed, a task can be executed on thread 2, allowing for minimum latency.
@@ -110,7 +110,7 @@ Before we move on to implementing and writing our first CUDA program, we must un
 
 Look at the diagram below:
 
-![Memory Hierarchy](/cuda-programming/mem_hierarchy.jpeg)
+![Memory Hierarchy](/cuda-programming/mem_hierarchy.webp)
 
 This hierarchy shows that registers are the fastest available memory. However, they have a finite size and are generally used for storing variables. If the data exceeds the size of the registers, it spills it to the slower local memory (VRAM). Each thread gets its own register file.
 
@@ -266,7 +266,7 @@ It finally comes into play. Instead of iterating through columns and rows one by
 We must first understand how each thread is structured in the CUDA programming model.
 
 Look at the diagram below:
-![Grid Blocks](https://docs.nvidia.com/cuda/cuda-programming-guide/_images/grid-of-thread-blocks.png)
+![Grid Blocks](https://docs.nvidia.com/cuda/cuda-programming-guide/_images/grid-of-thread-blocks.webp)
 
 Threads are arranged in this grid. We can specify threads per block and blocks per grid.
 

@@ -7,7 +7,7 @@ showToc: true
 tags: ["hyprland", "window-manager", "linux", "scripting", "wayland", "dotfiles"]
 ---
 
-![Empty Workspace Screenshot](/hyprland/hyprland-showcase.png)
+![Empty Workspace Screenshot](/hyprland/hyprland-showcase.webp)
 
 ## Introduction
 

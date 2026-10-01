@@ -7,7 +7,7 @@ showToc: true
 tags: ["git", "github", "workflows", "hugo"]
 ---
 
-![Hugo](https://usersnap.com/blog/wp-content/uploads/2015/10/static-site-generator-hugo-lessons-learned-1280x720.jpg)
+![Hugo](https://usersnap.com/blog/wp-content/uploads/2015/10/static-site-generator-hugo-lessons-learned-1280x720.webp)
 
 ## Introduction
 Hugo is a fast and reliable static site generator written in Go. Designed for performance and stability, it can generate even the largest websites in seconds. Furthermore, Hugo is highly customizable, allowing you to tweak configurations and apply themes easily via the `hugo.toml` file. This makes it popular for sites such as blogs, documentation, etc.
@@ -171,7 +171,7 @@ git push -u origin master
 2. Spot the section called "Build and Deployment."
 
 3. Change the source to GitHub Actions as shown in the image below:
-![Screenshot](/hugo/github-actions-settings.png)
+![Screenshot](/hugo/github-actions-settings.webp)
 
 ### Step 4: Setup GitHub Workflow
 GitHub expects a specific directory structure in order to configure your actions.
@@ -188,13 +188,13 @@ Luckily for us, Hugo already has a premade actions profile on GitHub.
 
 3. Click on the Hugo workflow that shows up:
 
-![Screenshot](/hugo/hugo-workflow-add.png)
+![Screenshot](/hugo/hugo-workflow-add.webp)
 
 4. Click on configure. Now a yml file will pop up.
 
 5. Look for the env section:
 
-![Screenshot](/hugo/workflow-change-env.png)
+![Screenshot](/hugo/workflow-change-env.webp)
 
 6. Change the version to the latest Hugo version available at [Hugo's GitHub Releases.](https://github.com/gohugoio/hugo/releases)
 

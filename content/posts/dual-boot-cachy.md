@@ -7,7 +7,7 @@ showToc: true
 tags: ["dual boot", "cachyos", "linux", "grub"]
 ---
 
-![Cachy Screenshot](/dual-boot-cachy/cachy-home-screen.png)
+![Cachy Screenshot](/dual-boot-cachy/cachy-home-screen.webp)
 
 ## Introduction
 
