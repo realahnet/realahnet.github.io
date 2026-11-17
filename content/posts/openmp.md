@@ -1,5 +1,5 @@
 ---
-title: "OpenMP: A step into code parallelisation"
+title: "OpenMP: A Step into Code Parallelisation"
 date: "2026-11-17"
 draft: false
 description: "You'll learn to use OpenMP and how it allows you to optimize your code with the concept of parallel programming."
