@@ -14,6 +14,7 @@ draft: false
 - 🎓 Studying **BS in Artificial Intelligence** at **FAST NUCES**  
 - 📱 Passionate about **Android development**  
 - ⚒️ Enthusiastic about **PC hardware**  
+- 🤖 Curious about **Artifical Intelligence** and how machines think.
 - 💭 Always eager to learn and experiment
 
 ---
