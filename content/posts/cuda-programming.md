@@ -4,7 +4,7 @@ date: "2026-10-01"
 draft: false
 description: "This post will be discussing the relevance of CUDA programming today and will teach you the basics of it."
 showToc: true
-tags: ["cuda", "programming", "scripting", "gpu", "AI"]
+tags: ["parallelization", "cuda", "programming", "scripting", "gpu", "AI"]
 ---
 
 ![Nvidia CUDA](/cuda-programming/cuda-banner.webp)
